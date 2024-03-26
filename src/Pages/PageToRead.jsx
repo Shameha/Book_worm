@@ -1,10 +1,10 @@
-import NavBar from "../Componants/NavBar/NavBar";
+// import NavBar from "../Componants/NavBar/NavBar";
 
 
 const PageToRead = () => {
     return (
         <div>
-            <NavBar></NavBar>
+            {/* <NavBar></NavBar> */}
          <h3>here we going to added graph</h3>            
         </div>
     );
