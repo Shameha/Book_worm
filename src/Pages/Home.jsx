@@ -9,7 +9,7 @@ const Home = () => {
         <div>
              {/*nav bar*/}
              {/* <NavBar></NavBar> */}
-             <h1>Home page</h1>
+             
              <div  className="m-auto  min-h-screen px-11">
 
              <Banner></Banner>
