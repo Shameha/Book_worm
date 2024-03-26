@@ -9,7 +9,7 @@ const MAinLayout = () => {
             <div>
           <NavBar></NavBar>         
             </div>
-            <div className="m-auto  min-h-screen px-11">
+            <div>
 
        <Outlet></Outlet>
             </div>

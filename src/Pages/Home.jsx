@@ -1,6 +1,7 @@
 // import React from 'react';
 
 import Banner from "../Componants/Banner/Banner";
+import Books from "../Componants/Books/Books";
 // import NavBar from "../Componants/NavBar/NavBar";
 
 const Home = () => {
@@ -9,7 +10,14 @@ const Home = () => {
              {/*nav bar*/}
              {/* <NavBar></NavBar> */}
              <h1>Home page</h1>
+             <div  className="m-auto  min-h-screen px-11">
+
              <Banner></Banner>
+             </div>
+            
+             <div>
+             <Books></Books>
+             </div>
         </div>
     );
 };
