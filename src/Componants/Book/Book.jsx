@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { FaRegStar } from "react-icons/fa";
 
 const Book = ({book}) => {
@@ -22,6 +22,7 @@ const Book = ({book}) => {
 						<span className="flex text-sm">{rating} <FaRegStar /></span>
 					</div>
 				</div>
+				<Outlet></Outlet>
 			</article>
     );
 };
