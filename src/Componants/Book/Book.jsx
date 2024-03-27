@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import { FaRegStar } from "react-icons/fa";
 
@@ -24,6 +25,10 @@ const Book = ({book}) => {
 			</article>
     );
 };
+Book.propTypes ={
+    book:PropTypes.object.isRequired
+    
+}
 
 
 export default Book;

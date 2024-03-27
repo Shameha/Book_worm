@@ -3,6 +3,7 @@
 
 // import { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveBook } from "../utils";
 
 const SingleBook = () => {
 //     const [a,b]=useState;
@@ -12,12 +13,17 @@ const SingleBook = () => {
 //     .then(data => b(data))
 // },[])
 
+
     const singleBook = useLoaderData();
     console.log(singleBook);
     const{id} = useParams();
     const single = singleBook.find( u=> u.id == id);
     const{bookName,author,image,review,totalPages,rating,category,tags,publisher,yearOfPublishing} = single; 
 
+    const handleListPage = single =>{
+      // console.log(single);
+      saveBook(single)
+    }
     return (
       <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
@@ -56,8 +62,9 @@ const SingleBook = () => {
         
           </div>
           <div className="flex gap-10">
-          <button className="btn btn-neutral">Read</button>
-          <button className="btn btn-info">Wishlist</button>
+          <button  onClick={()=>handleListPage(single)}
+           className="btn btn-neutral">Read</button>
+          <button  onClick={()=>handleListPage(single)} className="btn btn-info">Wishlist</button>
           </div>
         </div>
       </div>

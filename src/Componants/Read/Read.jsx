@@ -1,6 +1,7 @@
 
 
-const Read = () => {
+const Read = ( ) => {
+	
     return (
         <div>
             <div className="max-w-md p-8 sm:flex sm:space-x-6 dark:bg-gray-50 dark:text-gray-800">
