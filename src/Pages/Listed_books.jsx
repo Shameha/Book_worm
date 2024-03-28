@@ -14,14 +14,24 @@ const Listed_books = () => {
      const storeBook = getBooks()
      setBooks(storeBook)
 	},[])
+
     return (
 <div className="px-10">
 <div className="py-10">
 
 <button className="btn btn-block text-xl font-extrabold">Books</button>
 </div>
+<div className="items-center justify-center">
+<details className="dropdown items-center ">
+  <summary className="m-1 btn bg-green-500">Sort By</summary>
+  <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+    <li><a >Rating</a></li>
+    <li><a  >Number of pages</a></li>
+    <li><a >Publisher year</a></li>
+  </ul>
+</details>
+</div>
 
-        
 		
 		<div className="flex items-center -mx-4 overflow-x-auto py-10 px-10 overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800">
 	<div>
@@ -51,12 +61,12 @@ const Listed_books = () => {
 	
 	
 </div>
+
 <div>
 		{
 			books.map(read=>(<Read key={read.id} read={read}></Read>))
 		}
 		</div>
-
 
 </div>
     );
