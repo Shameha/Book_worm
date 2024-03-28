@@ -36,11 +36,7 @@ const Listed_books = () => {
 		
 		</div>
 	</Link>
-	<div>
-		{
-			books.map(read=>(<Read key={read.id} read={read}></Read>))
-		}
-		</div>
+	
 
 	</div>
 	<Link  onClick={()=>setTabInedx(1)}
@@ -52,14 +48,15 @@ const Listed_books = () => {
 		</svg>
 		<span>Wishlist</span>
 	</Link>
-	<div>
+	
+	
+</div>
+<div>
 		{
 			books.map(read=>(<Read key={read.id} read={read}></Read>))
 		}
 		</div>
 
-	
-</div>
 
 </div>
     );

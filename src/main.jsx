@@ -15,10 +15,12 @@ import Reads from './Componants/Reads/Reads.jsx'
 import WishList from './Componants/WishList/WishList.jsx'
 import Benifit from './Pages/Benifit.jsx'
 import Knowledge from './Pages/Knowledge.jsx'
+import ErrorPage from './Componants/ErrorPage/ErrorPage.jsx'
 const router = createBrowserRouter([
   {
     path:'/',
     element:<MAinLayout></MAinLayout>,
+    errorElement:<ErrorPage></ErrorPage>,
        children:[
         {
           path:'/',
