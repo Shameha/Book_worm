@@ -1,8 +1,8 @@
-# React + Vite
+link:https://66057b8059b63e132c6cdc9b--playful-cendol-190ab3.netlify.app/page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+About my project:
+1.Home page have 6 books list
+2.Whenever click any book we can see the book details
+3.If we find out out book click the button and save in list of book read section
+4.we alse the page list in chart
+5.Benifit we can learn what people say about reading book 
