@@ -13,6 +13,8 @@ import SingleBook from './Pages/SingleBook.jsx'
 import  { Toaster } from 'react-hot-toast';
 import Reads from './Componants/Reads/Reads.jsx'
 import WishList from './Componants/WishList/WishList.jsx'
+import Benifit from './Pages/Benifit.jsx'
+import Knowledge from './Pages/Knowledge.jsx'
 const router = createBrowserRouter([
   {
     path:'/',
@@ -51,7 +53,15 @@ const router = createBrowserRouter([
         {
           path:'/page',
           element:<PageToRead></PageToRead>
-        }    
+        },
+        {
+          path:'/benifits',
+          element:<Benifit></Benifit>
+              },
+        {
+          path:'/know',
+          element:<Knowledge></Knowledge>
+              },
             
        ]
   },

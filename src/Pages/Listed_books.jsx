@@ -1,7 +1,7 @@
 // import React from 'react';
 
 import { useEffect, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { getBooks } from "../utils";
 import Read from "../Componants/Read/Read";
 
@@ -33,13 +33,15 @@ const Listed_books = () => {
 		<span>Read</span>
 		
 		<div>
-		<div>
+		
+		</div>
+	</Link>
+	<div>
 		{
 			books.map(read=>(<Read key={read.id} read={read}></Read>))
 		}
 		</div>
-		</div>
-	</Link>
+
 	</div>
 	<Link  onClick={()=>setTabInedx(1)}
 	
@@ -50,7 +52,12 @@ const Listed_books = () => {
 		</svg>
 		<span>Wishlist</span>
 	</Link>
-	
+	<div>
+		{
+			books.map(read=>(<Read key={read.id} read={read}></Read>))
+		}
+		</div>
+
 	
 </div>
 

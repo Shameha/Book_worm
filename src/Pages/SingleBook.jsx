@@ -3,7 +3,7 @@
 
 // import { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveBook } from "../utils";
+import { added, saveBook } from "../utils";
 
 const SingleBook = () => {
 //     const [a,b]=useState;
@@ -24,6 +24,12 @@ const SingleBook = () => {
       // console.log(single);
       saveBook(single)
     }
+
+    const addedtoWishlist = single =>{
+      // console.log(single);
+      added(single)
+    }
+
     return (
       <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
@@ -64,7 +70,7 @@ const SingleBook = () => {
           <div className="flex gap-10">
           <button  onClick={()=>handleListPage(single)}
            className="btn btn-neutral">Read</button>
-          <button  onClick={()=>handleListPage(single)} className="btn btn-info">Wishlist</button>
+          <button  onClick={()=>addedtoWishlist(single)} className="btn btn-info">Wishlist</button>
           </div>
         </div>
       </div>

@@ -13,6 +13,8 @@ const NavBar = () => {
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 gap-10 rounded-box w-52">
         <NavLink to='/'><button className="btn">Home</button></NavLink>
         <Link to='/list'><button className="btn btn-outline">Listed Books</button></Link>
+        <Link to='/benifits'><button className="btn btn-outline">Listed Books</button></Link>
+        <Link to='/list'><button className="btn btn-outline">Listed Books</button></Link>
         <button className="btn btn-outline">Pages to Read</button>
       </ul>
     </div>
@@ -23,6 +25,8 @@ const NavBar = () => {
     <button className="btn btn-outline"><NavLink to='/' className={({isActive}) => isActive ? 'text-green-600' : 'text-gray-500'}>Home</NavLink></button>
         <button className="btn btn-outline">Listed Books</button>
         <button className="btn btn-outline"> <NavLink to='/page' className={({isActive}) => isActive ? 'text-green-600' : 'text-gray-500'}>Pages to Read</NavLink></button>
+        <button className="btn btn-outline"> <NavLink to='/benifits' className={({isActive}) => isActive ? 'text-green-600' : 'text-gray-500'}>Benifits of books</NavLink></button>
+        <button className="btn btn-outline"> <NavLink to='/know' className={({isActive}) => isActive ? 'text-green-600' : 'text-gray-500'}>Knowledge</NavLink></button>
     </ul>
   </div>
   <div className="navbar-end gap-5">

@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types';
+
+
 const Read = ( {read}) => {
 	const{bookName,author,image} = read; 
     return (
@@ -30,5 +33,9 @@ const Read = ( {read}) => {
         </div>
     );
 };
+Read.propTypes ={
+    read:PropTypes.object.isRequired
+    
+}
 
 export default Read;
